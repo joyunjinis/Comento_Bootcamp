@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "TTTtangsbudaejjigaeB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* 화면 전체 중앙 정렬 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Pretendard-Regular";
+}
+
+h1 {
+  font-family: "TTTtangsbudaejjigaeB";
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  text-align: center;
+}
+
+img {
+  width: 250px;
+}
+
+.react {
+  width: 140px;
+}
+
+.typescript {
+  width: 140px;
+}
+
+.next {
+  width: 400px;
+}
+
+.node {
+  width: 230px;
+  margin-right: 9px;
+}
+
+.github {
+  width: 140px;
+}
+
+.notion {
+  width: 280px;
+}

@@ -18,6 +18,7 @@ nav {
   font-size: 14pt;
   font-family: "TTTtangsbudaejjigaeB";
   position: relative;
+  margin-top: 0;
 }
 nav ul {
   padding: 0;
@@ -78,12 +79,24 @@ li a:hover {
   background-size: cover;
   background-color: #333333;
   color: white;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
-.header {
+h2 {
   color: #333;
   text-align: center;
-  margin: 300px;
+  margin-top: 50px;
+  font-family: "Pretendard-Regular";
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+body {
+  background-image: url("./image/main.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
