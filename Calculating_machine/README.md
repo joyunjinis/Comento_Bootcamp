@@ -41,7 +41,7 @@
 
 
 ## 🛠️ 사용 기술 및 IDE
-- HTML, CSS
+- HTML, CSS, Javascript
 - VS CODE, Cursor
 
 
