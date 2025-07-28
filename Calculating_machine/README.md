@@ -58,10 +58,3 @@
 
 
 ```
-
-
----
-
-
-## 📷 수료증 사진
-![Image](https://github.com/user-attachments/assets/4d412687-f4d1-4ec9-8f5c-0dd011df2532)
