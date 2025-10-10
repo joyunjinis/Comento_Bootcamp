@@ -1,4 +1,4 @@
-# 2,3차 업무
+# 2, 3차 업무
 ## [2차] 웹사이트 화면 구성, [3차] 사용자와 커뮤니케이션 할 수 있는 웹페이지
 
 
@@ -78,18 +78,11 @@
 ```
 ---
 
-## 📷 index 화면
-<img width="1194" height="662" alt="Image" src="https://github.com/user-attachments/assets/89ad2f83-9cc2-478d-b840-8be24bcdbaf0" />
+## 📷 계산기 화면
+<img width="1182" height="659" alt="Image" src="https://github.com/user-attachments/assets/32d81d98-d2a0-431e-8bf5-069f0188d3b6" />
 
-## 📷 기본 정보 화면
-<img width="1202" height="661" alt="Image" src="https://github.com/user-attachments/assets/147754d1-db6c-4392-bd47-6b20f1c2c60a" />
+## 📷 계산 화면
+<img width="1183" height="650" alt="Image" src="https://github.com/user-attachments/assets/1bf3633e-602f-44f4-ac00-588ca8c4896f" />
 
-## 📷 경험 화면
-<img width="1189" height="658" alt="Image" src="https://github.com/user-attachments/assets/ae0833bd-9f8e-4b25-877f-48f67759a217" />
-
-## 📷 기술 스택 화면
-<img width="1184" height="658" alt="Image" src="https://github.com/user-attachments/assets/94046b05-1948-43ad-940d-17c3305a3adb" />
-
-## 📷 프로젝트 화면
-<img width="1185" height="660" alt="Image" src="https://github.com/user-attachments/assets/80b87952-82b4-42a1-a325-c775f75fa02a" />
-
+## 📷 계산 완료 화면
+<img width="1183" height="650" alt="Image" src="https://github.com/user-attachments/assets/242f7c0e-2194-481a-a434-013f9733c32b" />
