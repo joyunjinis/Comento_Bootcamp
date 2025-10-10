@@ -1,0 +1,70 @@
+/* 화면 전체 중앙 정렬 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* ABOUT ME 컨테이너 정렬 */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* 이미지 스타일 */
+.profile {
+  width: 150px; /* 원하는 크기로 조정 */
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* 텍스트 정렬 */
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* ABOUT ME 제목 중앙 정렬 */
+h3,
+hr {
+  text-align: center;
+}
+
+/* 반응형 디자인: 화면이 작으면 세로 정렬 */
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+p {
+  margin: 1px;
+}
+
+.icon {
+  width: 50px;
+}
+
+img {
+  width: 300px;
+}
+
+.aboutme-li {
+  text-align: left;
+}
