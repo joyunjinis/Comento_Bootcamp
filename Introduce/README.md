@@ -45,7 +45,7 @@
 
 
 ## 🛠️ 사용 기술
-- HTML, CSS, Javascript
+- HTML, CSS
 
 
 ---
@@ -58,13 +58,24 @@
 ├── 📁 index.html             # 메인 인터페이스
 ├── 📁 index.css              # 메인 인터페이스 스타일
 ├── 📁 profile.html           # 기본 정보
-├── 📁 profile.css            # 기본 정보, 경험, 기술 스택 스타일
+├── 📁 profile.css            # 기본 정보, 경험, 기술 스택, 프로젝트 스타일
 ├── 📁 experience.html        # 경험
 ├── 📁 stack.html             # 기술 스택
+├── 📁 project.html           # 프로젝트
 ```
 ---
 
 ## 📷 index 화면
+<img width="1194" height="662" alt="Image" src="https://github.com/user-attachments/assets/89ad2f83-9cc2-478d-b840-8be24bcdbaf0" />
 
+## 📷 기본 정보 화면
+<img width="1202" height="661" alt="Image" src="https://github.com/user-attachments/assets/147754d1-db6c-4392-bd47-6b20f1c2c60a" />
 
+## 📷 경험 화면
+<img width="1189" height="658" alt="Image" src="https://github.com/user-attachments/assets/ae0833bd-9f8e-4b25-877f-48f67759a217" />
 
+## 📷 기술 스택 화면
+<img width="1184" height="658" alt="Image" src="https://github.com/user-attachments/assets/94046b05-1948-43ad-940d-17c3305a3adb" />
+
+## 📷 프로젝트 화면
+<img width="1185" height="660" alt="Image" src="https://github.com/user-attachments/assets/80b87952-82b4-42a1-a325-c775f75fa02a" />
