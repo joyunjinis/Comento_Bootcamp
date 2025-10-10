@@ -62,6 +62,7 @@
 ├── 📁 experience.html        # 경험
 ├── 📁 stack.html             # 기술 스택
 ├── 📁 project.html           # 프로젝트
+├── 📂 image/                 # 각종 필요한 이미지 파일
 ```
 ---
 
