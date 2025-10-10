@@ -85,4 +85,4 @@
 <img width="1183" height="650" alt="Image" src="https://github.com/user-attachments/assets/1bf3633e-602f-44f4-ac00-588ca8c4896f" />
 
 ## 📷 계산 완료 화면
-<img width="1183" height="650" alt="Image" src="https://github.com/user-attachments/assets/242f7c0e-2194-481a-a434-013f9733c32b" />
+<img width="1185" height="651" alt="Image" src="https://github.com/user-attachments/assets/0f89b715-c3a7-4653-ad72-1a07a663b873" />
