@@ -29,7 +29,7 @@ FR4) 본인만의 추가기능을 1개 추가합니다. 깃허브에 코드를 �
 ---
 
 
-## 👨‍💻 [업무 수행 결과 피드백
+## 👨‍💻 업무 수행 결과 피드백
  
 1. 전체적인 구조 및 스크립트까지 작성 잘함
 2. 클래스 명을 구체적으로 보자면, 보통 wrap-container-part/pannel-box 와 같은 구조로 작성
@@ -43,20 +43,21 @@ FR4) 본인만의 추가기능을 1개 추가합니다. 깃허브에 코드를 �
        - <input type="time" id="alarm-input" step="1" /> 으로 step="1"을 설정하면 초단위 입력까지 가능(기본은 분까지만)
        - input을 3개로 나누는 방법
        - select 요소로 선택
-  4. 사용자 입력 값에 대한 검증 필요
+4. 사용자 입력 값에 대한 검증 필요
    - alarm-input에 사용자 입력값에 대한 유효성 검사 추가
-  5. 코드 중복 제거
+5. 코드 중복 제거
    - document.getElementByld("clock")가 여러 곳에서 중복 호출되고 있음
    - 개선방안: 상단에서 한번만 선언하여 재사용 가능
-  6. JS 모듈화 및 함수 추상화 미흡
+6. JS 모듈화 및 함수 추상화 미흡
    - 전역 스코프에 변수가 분산되어 있고, 책임 분리가 되지 않음
    - 함수 책임이 분리되지 않고, 내부 로직이 직관적이지 않음
    - 개선 방안
       - initClock, initBattery, initAlarm 등의 초기화 함수로 분리
       - IIFE 또는 모듈 패턴으로 구성해 전역 오염 방지
-  7. [QA] updateClock
-   -  
-
+7. [QA] updateClock: 자세한 설명이 부족하여 그것에 대한 설명을 피드백 제시해줌
+8. [QA] 함수명: startBatteryDrain
+   - "배터리를 출력함", "글자가 검정색으로 바뀜" -> 정확히 어떤 DOM을 조작했는지, 어떤 CSS가 적용되었는지에 대한 설명 없음
+   
 
 ## 🛠️ 사용 기술
 - HTML, CSS, Javascript
@@ -68,18 +69,18 @@ FR4) 본인만의 추가기능을 1개 추가합니다. 깃허브에 코드를 �
 
 ## 📂 프로젝트 구조
 ```
-📂 calculating-machine/
-├── 📁 main.html             # 계산기 인터페이스
-├── 📁 main.css              # 계산기 스타일
-├── 📁 main.js               # 계산기 이벤트
+📂 alarm-clock/
+├── 📁 main.html             # 알람시계 인터페이스
+├── 📁 main.css              # 알람시계 스타일
+├── 📁 main.js               # 알람시계 이벤트
 ```
 ---
 
-## 📷 계산기 화면
-<img width="1182" height="659" alt="Image" src="https://github.com/user-attachments/assets/32d81d98-d2a0-431e-8bf5-069f0188d3b6" />
+## 📷 알람시계 시작화면
+<img width="1022" height="734" alt="Image" src="https://github.com/user-attachments/assets/f9429c49-8d85-4fde-9df7-5aefa6b48037" />
 
-## 📷 계산 화면
-<img width="1183" height="650" alt="Image" src="https://github.com/user-attachments/assets/1bf3633e-602f-44f4-ac00-588ca8c4896f" />
+## 📷 점차 배터리가 줄어드는 화면
+<img width="1020" height="724" alt="Image" src="https://github.com/user-attachments/assets/f6951bc8-6a54-4b00-8817-088cba7159fb" />
 
-## 📷 계산 완료 화면
-<img width="1185" height="651" alt="Image" src="https://github.com/user-attachments/assets/0f89b715-c3a7-4653-ad72-1a07a663b873" />
+## 📷 베터리가 0% 되면 시계가 검정색으로 바뀌는 화면
+<img width="1020" height="719" alt="Image" src="https://github.com/user-attachments/assets/1c1c9d53-5f09-436c-b2a9-94a280480172" />
