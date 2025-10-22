@@ -39,11 +39,27 @@ FR4) 본인만의 추가기능을 1개 추가합니다. 깃허브에 코드를 �
    - 시간 비교 시 Data 객체를 문자열로 변환해 정확히 매칭
    - 예외 처리를 추가하여 잘못된 포맷 입력도 검증 필요 (hh:mm:ss 유효성 검사)
    - 또 다른 방법
-     - 
+     - <input type="text id="alarm-input" placeholder="hh:mm:ss" />처럼 단순 text 필드를 사용하면 시간형식 오류, 잘못된 입력 등 예외가 많기 때문에 UX의 신뢰성 떨어질 가능성이 있음
+       - <input type="time" id="alarm-input" step="1" /> 으로 step="1"을 설정하면 초단위 입력까지 가능(기본은 분까지만)
+       - input을 3개로 나누는 방법
+       - select 요소로 선택
+  4. 사용자 입력 값에 대한 검증 필요
+   - alarm-input에 사용자 입력값에 대한 유효성 검사 추가
+  5. 코드 중복 제거
+   - document.getElementByld("clock")가 여러 곳에서 중복 호출되고 있음
+   - 개선방안: 상단에서 한번만 선언하여 재사용 가능
+  6. JS 모듈화 및 함수 추상화 미흡
+   - 전역 스코프에 변수가 분산되어 있고, 책임 분리가 되지 않음
+   - 함수 책임이 분리되지 않고, 내부 로직이 직관적이지 않음
+   - 개선 방안
+      - initClock, initBattery, initAlarm 등의 초기화 함수로 분리
+      - IIFE 또는 모듈 패턴으로 구성해 전역 오염 방지
+  7. [QA] updateClock
+   -  
 
 
 ## 🛠️ 사용 기술
-- HTML, CSS, [3차] Javascript
+- HTML, CSS, Javascript
 
 
 ---
