@@ -97,11 +97,20 @@
 ```
 ---
 
-## 📷 알람시계 시작화면
-<img width="1022" height="734" alt="Image" src="https://github.com/user-attachments/assets/f9429c49-8d85-4fde-9df7-5aefa6b48037" />
+## 📷 투두리스트 메인 화면 & 삭제한 화면
+<img width="1027" height="723" alt="Image" src="https://github.com/user-attachments/assets/e2aa01c8-6e40-4889-a5fb-d1212890cb92" />
 
-## 📷 점차 배터리가 줄어드는 화면
-<img width="1020" height="724" alt="Image" src="https://github.com/user-attachments/assets/f6951bc8-6a54-4b00-8817-088cba7159fb" />
+## 📷 할일 추가한 화면
+<img width="1011" height="721" alt="Image" src="https://github.com/user-attachments/assets/0ef26455-3939-4cce-9fa8-f1591837f821" />
 
-## 📷 베터리가 0% 되면 시계가 검정색으로 바뀌는 화면
-<img width="1020" height="719" alt="Image" src="https://github.com/user-attachments/assets/1c1c9d53-5f09-436c-b2a9-94a280480172" />
+---
+
+## 📷 회원가입 메인 화면
+<img width="1012" height="729" alt="Image" src="https://github.com/user-attachments/assets/4fa8c3ab-e659-4571-b4b0-857fd9c18814" />
+
+## 📷 비밀번호 규칙이 맞지 않았을때의 화면
+<img width="1028" height="729" alt="Image" src="https://github.com/user-attachments/assets/c848373d-9cc6-4a0d-8f3e-4cba0bb38826" />
+
+## 📷 정상적으로 회원가입이 완료되었을때의 화면
+<img width="1016" height="728" alt="Image" src="https://github.com/user-attachments/assets/dec7626f-e1e3-489c-9fbb-5c7b0dbbf040" />  
+<img width="1020" height="728" alt="Image" src="https://github.com/user-attachments/assets/9846a28a-09f2-40ae-92af-be44f0852435" />
