@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="profile.css" />
+    <!-- [수정] reset.css 추가 -->
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./profile.css" />
   </head>
   <body>
     <h1>PROJECT</h1>
     <hr />
     <div class="about-container">
       <div class="aboutme">
-        <p><strong>Node.js:</strong> Team_Planner</p>
-        <p><strong>React + H/W(RaspberryPi):</strong> 우산곰</p>
+        <!-- [수정] p 태그 → ul-li로 변경 : 목록형 데이터에는 ul-li가 적절 -->
+        <ul>
+          <li><strong>Node.js:</strong> Team_Planner</li>
+          <li><strong>React + H/W(RaspberryPi):</strong> 우산곰</li>
+        </ul>
       </div>
     </div>
   </body>

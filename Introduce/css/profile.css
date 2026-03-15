@@ -21,7 +21,7 @@ body {
 
 /* 이미지 스타일 */
 .profile {
-  width: 150px; /* 원하는 크기로 조정 */
+  width: 150px;
   height: auto;
   border-radius: 10px;
   margin-right: 20px;
@@ -46,14 +46,14 @@ hr {
     flex-direction: column;
     text-align: center;
   }
-
   .profile {
     margin-right: 0;
     margin-bottom: 10px;
   }
 }
 
-p {
+/* [수정] p 태그 스타일 → li로 변경했으므로 li로 수정 */
+li {
   margin: 1px;
 }
 
@@ -61,10 +61,9 @@ p {
   width: 50px;
 }
 
-img {
+/* [수정] img 전체에 width 적용은 icon 등 다른 이미지에도 영향을 줌 → profile 클래스로 한정 */
+.profile {
   width: 300px;
 }
 
-.aboutme-li {
-  text-align: left;
-}
+/* [수정] .aboutme-li 제거 → stack.html에서 .aboutme로 통일했으므로 불필요 */

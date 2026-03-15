@@ -1,30 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./profile.css" />
   </head>
   <body>
     <h1>ABOUT ME</h1>
     <hr />
     <div class="about-container">
-      <img
-        src="./image/KakaoTalk_20250325_224605660.jpg"
-        class="profile"
-        alt="Profile"
-      />
+      <!-- [수정] 이미지 파일명 변경 : KakaoTalk_20250325_224605660.jpg → profile.jpg -->
+      <img src="./image/profile.jpg" class="profile" alt="Profile" />
       <div class="aboutme">
-        <p><strong>Name:</strong> Jo YunJin</p>
-        <p><strong>University:</strong> SungKyul University</p>
-        <p><strong>Grade:</strong> 4th</p>
-        <p><strong>Major:</strong> Information and Communication Engineering</p>
-        <p><strong>Age:</strong> 23</p>
-        <p><strong>Mbti:</strong> ESFP</p>
+        <!-- [수정] p 태그 → ul-li로 변경 : 목록형 데이터에는 ul-li가 적절 -->
+        <ul>
+          <li><strong>Name:</strong> Jo YunJin</li>
+          <li><strong>University:</strong> SungKyul University</li>
+          <li><strong>Grade:</strong> 4th</li>
+          <li>
+            <strong>Major:</strong> Information and Communication Engineering
+          </li>
+          <li><strong>Age:</strong> 23</li>
+          <li><strong>Mbti:</strong> ESFP</li>
+        </ul>
         <div>
           <a href="https://github.com/joyunjinis">
-            <img src="./image/images.png" class="icon" alt="GitHub" />
+            <!-- [수정] 이미지 파일명 변경 : images.png → github-icon.png -->
+            <img src="./image/github-icon.png" class="icon" alt="GitHub" />
           </a>
         </div>
       </div>

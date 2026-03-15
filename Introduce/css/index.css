@@ -1,3 +1,10 @@
+/* [수정] body 스타일 추가 : index.html의 인라인 스타일 및 구식 body 속성 제거 후 CSS로 이동 */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
 nav {
   font-size: 12pt;
   font-family: "PT Sans", Arial, Sans-serif;
@@ -8,7 +15,6 @@ nav ul {
   margin: 0 auto;
   width: auto;
 }
-
 nav a {
   line-height: 50px;
   height: 50px;
@@ -21,7 +27,6 @@ nav li a {
 nav li:last-child a {
   border-right: 0;
 }
-
 nav a#pull {
   display: none;
 }
@@ -30,16 +35,13 @@ html {
   -webkit-user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 ul {
-  /*list-style-type: none;*/
   margin: 0;
   padding: 0;
   background-color: #333;
   text-align: center;
 }
 li {
-  /*position: relative;*/
   display: inline-block;
 }
 li a {
@@ -49,11 +51,12 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  /*color: #597812;*/
   color: #ffd400;
   font-weight: normal;
 }
-.menu {
+
+/* [수정] .menu → .wrap 으로 클래스명 변경 */
+.wrap {
   width: 5000px;
   height: 50px;
   text-align: center;

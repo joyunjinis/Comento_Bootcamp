@@ -1,21 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body
-    topmargin="0"
-    bottommargin="0"
-    leftmargin="0"
-    rightmargin="0"
-    style="background-color: #f6f6f6"
-  >
-    <div class="menu">
-      <nav class="clearfix">
-        <ul class="clearfix">
+  <body>
+    <!-- [수정] topmargin 등 구식 body 속성 제거, 인라인 스타일 제거 → index.css로 이동 -->
+    <!-- [수정] class="menu" → class="wrap" : nav + 콘텐츠를 감싸는 전체 래퍼이므로 wrap이 적절 -->
+    <div class="wrap">
+      <!-- [수정] class="clearfix" 제거 : 스타일 없는 불필요한 클래스 -->
+      <nav>
+        <ul>
           <li><a href="./profile.html">ABOUT ME</a></li>
           <li><a href="./project.html">PROJECT</a></li>
           <li><a href="./stack.html">STACK</a></li>
