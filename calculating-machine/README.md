@@ -67,7 +67,7 @@
 ---
 
 ## 🔗 배포 링크
-https://comento-bootcamp-fyzg.vercel.app/
+https://comento-bootcamp-fyzg.vercel.app
 
 ---
 
