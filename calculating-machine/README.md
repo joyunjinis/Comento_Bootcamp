@@ -75,7 +75,7 @@ https://comento-bootcamp-fyzg.vercel.app/
 ## 📂 프로젝트 구조
 ```
 📂 calculating-machine/
-├── 📁 main.html             # 계산기 인터페이스
+├── 📁 index.html             # 계산기 인터페이스
 ├── 📁 main.css              # 계산기 스타일
 ├── 📁 main.js               # 계산기 이벤트
 ```
