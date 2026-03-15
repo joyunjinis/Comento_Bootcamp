@@ -1,47 +1,63 @@
 const clockTarget = document.getElementById("clock");
 
-function updateClock() {
-  const date = new Date();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  const weekDay = ["일", "월", "화", "수", "목", "금", "토"][date.getDay()];
-  const hours = String(date.getHours()).padStart(2, "0");
-  const minutes = String(date.getMinutes()).padStart(2, "0");
-  const seconds = String(date.getSeconds()).padStart(2, "0");
+(function initApp() {
+  const clockTarget = document.getElementById("clock");
+  let batteryLevel = 100;
+  let alarmTime = null;
 
-  clockTarget.innerText = `${month}월 ${day}일 ${weekDay}요일 
-  ${hours}:${minutes}:${seconds}`;
-}
+  function updateClock() {
+    const date = new Date();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const weekDay = ["일", "월", "화", "수", "목", "금", "토"][date.getDay()];
+    const hours = String(date.getHours()).padStart(2, "0");
+    const minutes = String(date.getMinutes()).padStart(2, "0");
+    const seconds = String(date.getSeconds()).padStart(2, "0");
+    clockTarget.innerText = `${month}월 ${day}일 ${weekDay}요일\n${hours}:${minutes}:${seconds}`;
+  }
 
-// 시계 시작
-updateClock();
-setInterval(updateClock, 1000);
+  function setBattery(level) {
+    const batteryContainer = document.querySelector(".battery-container");
+    batteryContainer.textContent = `배터리 : ${level}%`;
+  }
 
-// 배터리 관련
-let batteryLevel = 100;
+  function startBatteryDrain() {
+    setInterval(() => {
+      if (batteryLevel > 0) {
+        batteryLevel -= 1;
+        setBattery(batteryLevel);
+      } else {
+        clockTarget.style.color = "black";
+        clockTarget.style.backgroundColor = "black";
+      }
+    }, 1000);
+  }
 
-function setBattery(level) {
-  const batteryContainer = document.querySelector(".battery-container");
-  batteryContainer.textContent = `배터리 : ${level}%`;
-}
+  function initAlarm() {
+    const alarmInput = document.getElementById("alarm-input");
+    const addButton = document.querySelector("button");
 
-function startBatteryDrain() {
-  setInterval(() => {
-    if (batteryLevel > 0) {
-      batteryLevel -= 1;
-      setBattery(batteryLevel);
-    } else {
-      const clockTarget = document.getElementById("clock");
-      clockTarget.style.color = "black";
-      clockTarget.style.backgroundColor = "black";
+    addButton.addEventListener("click", () => {
+      if (!/^\d{2}:\d{2}:\d{2}$/.test(alarmInput.value)) {
+        alert("hh:mm:ss 형식으로 입력해주세요.");
+        return;
+      }
+      alarmTime = alarmInput.value;
+    });
+  }
+
+  function checkAlarm() {
+    const now = new Date();
+    const timeNow = now.toTimeString().split(" ")[0];
+    if (alarmTime && timeNow === alarmTime) {
+      alert("알람 시간입니다!");
     }
-  }, 1000);
-}
+  }
 
-// DOM 로딩 후 초기화
-document.addEventListener("DOMContentLoaded", () => {
+  updateClock();
+  setInterval(updateClock, 1000);
   setBattery(batteryLevel);
   startBatteryDrain();
-});
-
-// 알람 관련
+  initAlarm();
+  setInterval(checkAlarm, 1000);
+})();

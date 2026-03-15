@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -14,21 +14,19 @@
         <div class="left-column">
           <div id="clock">2025-12-01 11:32:42</div>
         </div>
-
         <!-- 오른쪽: 배터리 + 알람 현황 -->
         <div class="right-column">
           <div class="battery-container"></div>
           <div class="alarm-status"></div>
         </div>
       </div>
-
       <!-- 하단 버튼 -->
       <div class="buttons">
-        <input type="text" id="alarm-input" placeholder="hh:mm:ss" />
+        <!-- <input type="text" id="alarm-input" placeholder="hh:mm:ss" /> UX/신뢰성 떨어질수 있음 -->
+        <input type="time" id="alarm-input" step="1" />
         <button>추가</button>
       </div>
     </div>
-
     <script src="main.js" defer></script>
   </body>
 </html>
