@@ -1,16 +1,16 @@
-// [수정] DOM 중복 탐색 제거 : 상단에 한 번만 선언
-const inputField = document.getElementById("numberInput");
-
-// [수정] updateDisplay 함수 추가 : DOM 조작을 한 곳에서 관리
-function updateDisplay() {
-  inputField.value = displayValue;
-}
+// [수정] DOM 로드 후 초기화를 위해 선언만 전역에
+let inputField;
 
 // 전역변수
 let currentInput = ""; // 현재 입력값
 let previousInput = ""; // 이전 입력값
 let operation = null; // 연산자
 let displayValue = ""; // 화면에 표시될 값
+
+// [수정] updateDisplay 함수 추가 : DOM 조작을 한 곳에서 관리
+function updateDisplay() {
+  inputField.value = displayValue;
+}
 
 // 숫자 입력 처리
 function press(num) {
@@ -93,3 +93,8 @@ function del() {
     updateDisplay();
   }
 }
+
+// [수정] DOMContentLoaded 후 inputField 초기화 : HTML 로드 전 DOM 탐색 방지
+document.addEventListener("DOMContentLoaded", () => {
+  inputField = document.getElementById("numberInput");
+});
